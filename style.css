@@ -1,0 +1,51 @@
+:root{
+    --main-color: rebeccapurple;
+    --secondary-color: #f1faee;
+    --text-color: #1d3557;
+    --text-color-2: #457b9d;
+    --nav-color: #e63946;
+    --bg-color:  #a8dadc;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+
+body{
+    font-size: 16px;    /*1 rem == 10px*/
+    font-family: 'Roboto', system-ui;
+}
+
+
+.title{
+    color: var(--main-color);
+    font-size: 2rem;
+}
+
+.title span{
+    color: var(--text-color);
+    font-size: 3rem;
+}
+
+.navegacion {
+    text-align: center;
+    color: var(--secondary-color);
+    background-color: var(--main-color);
+}
+
+.contenedor{
+    width: 120rem;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0%;
+    margin-left: auto;
+
+}
+
+
+
+
+
+
+
