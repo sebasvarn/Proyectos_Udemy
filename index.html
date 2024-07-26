@@ -1,112 +1,204 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto 1</title>
-    <link rel="preload" href="css/normalize.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sport Colon</title>
+    <link rel="preload" href="css/normalize.css" />
 
-    <link rel="preload" href="css/style.css" as="style">
-    <link href="css/style.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="preload" href="css/style.css" as="style" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
-        <h1 class="title">Sebastian Vera<span>Freelancer</span></h1>
+        <div class="titulo">
+      <img src="images/images.png" alt="logo" class="logo" />
+      <h1 class="title">Complejo Deportivo </h1>
+
+      </div>
     </header>
 
-
     <div class="nav-bg">
-    <nav class="navegacion contenedor">
-        <a href="#" >Inicio</a>
+      <nav class="navegacion contenedor">
+        <a href="#">Inicio</a>
         <a href="#">Nosotros</a>
         <a href="#">Clientes</a>
         <a href="#">Contactos</a>
-    </nav>
+      </nav>
     </div>
 
-<!--   <img src="images/images.jpg">    -->
+    <!--   <img src="images/images.jpg">    -->
 
     <section class="hero">
+      <div class="contenido-hero">
+        <h2>Desarrollo Web Freelancer</h2>
 
-        <div class="contenido-hero">    
-            <h2>Desarrollo Web Freelancer</h2>
-            
-            <div class="ubicacion">
-
-                <p>
-                <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-access-point"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12l0 .01" /><path d="M14.828 9.172a4 4 0 0 1 0 5.656" /><path d="M17.657 6.343a8 8 0 0 1 0 11.314" /><path d="M9.168 14.828a4 4 0 0 1 0 -5.656" /><path d="M6.337 17.657a8 8 0 0 1 0 -11.314" /></svg>
-                Lorem ipsum omnis
-                </p>
-            </div>
-            
-            <a class = 'boton' href="#">Contactar</a>
-
-            
-            
+        <div class="ubicacion">
+          <p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="44"
+              height="44"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-access-point"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M12 12l0 .01" />
+              <path d="M14.828 9.172a4 4 0 0 1 0 5.656" />
+              <path d="M17.657 6.343a8 8 0 0 1 0 11.314" />
+              <path d="M9.168 14.828a4 4 0 0 1 0 -5.656" />
+              <path d="M6.337 17.657a8 8 0 0 1 0 -11.314" />
+            </svg>
+            Lorem ipsum omnis
+          </p>
         </div>
+
+        <a class="boton" href="#">Contactar</a>
+      </div>
     </section>
 
-    
+    <main class="contenedor sombra">
+      <h2>Mis servicios</h2>
+      <div class="servicios">
+        <section class="servicio">
+          <p>
+            <div class="iconos">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="44"
+              height="44"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-brand-webflow"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M17 10s-1.376 3.606 -1.5 4c-.046 -.4 -1.5 -8 -1.5 -8c-2.627 0 -3.766 1.562 -4.5 3.5c0 0 -1.843 4.593 -2 5c-.013 -.368 -.5 -4.5 -.5 -4.5c-.15 -2.371 -2.211 -3.98 -4 -3.98l2 12.98c2.745 -.013 4.72 -1.562 5.5 -3.5c0 0 1.44 -4.3 1.5 -4.5c.013 .18 1 8 1 8c2.758 0 4.694 -1.626 5.5 -3.5l3.5 -9.5c-2.732 0 -4.253 2.055 -5 4z"
+              />
+            </svg>
+            </div>
+          </p>
+          <h3>Diseno Web</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dicta
+            quam optio, perspiciatis quae laborum?
+          </p>
+        </section>
+        <section class="servicio">
+          <p>
 
-    <main>
-    <h2>Mis servicios</h2>
-        <section>
-            <p>
-                <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-webflow"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M17 10s-1.376 3.606 -1.5 4c-.046 -.4 -1.5 -8 -1.5 -8c-2.627 0 -3.766 1.562 -4.5 3.5c0 0 -1.843 4.593 -2 5c-.013 -.368 -.5 -4.5 -.5 -4.5c-.15 -2.371 -2.211 -3.98 -4 -3.98l2 12.98c2.745 -.013 4.72 -1.562 5.5 -3.5c0 0 1.44 -4.3 1.5 -4.5c.013 .18 1 8 1 8c2.758 0 4.694 -1.626 5.5 -3.5l3.5 -9.5c-2.732 0 -4.253 2.055 -5 4z" /></svg>
-            </p>
-            <h3>Diseno Web</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dicta quam optio, perspiciatis quae laborum?</p>
+            <div class="iconos">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="44"
+              height="44"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-brand-apple"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M8.286 7.008c-3.216 0 -4.286 3.23 -4.286 5.92c0 3.229 2.143 8.072 4.286 8.072c1.165 -.05 1.799 -.538 3.214 -.538c1.406 0 1.607 .538 3.214 .538s4.286 -3.229 4.286 -5.381c-.03 -.011 -2.649 -.434 -2.679 -3.23c-.02 -2.335 2.589 -3.179 2.679 -3.228c-1.096 -1.606 -3.162 -2.113 -3.75 -2.153c-1.535 -.12 -3.032 1.077 -3.75 1.077c-.729 0 -2.036 -1.077 -3.214 -1.077z"
+              />
+              <path d="M12 4a2 2 0 0 0 2 -2a2 2 0 0 0 -2 2" />
+            </svg>
+        </div>
+          </p>
+          <h3>Aplicaciones web</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dicta
+            quam optio, perspiciatis quae laborum?
+          </p>
         </section>
-        <section>
-            <p>
-                <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-apple"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.286 7.008c-3.216 0 -4.286 3.23 -4.286 5.92c0 3.229 2.143 8.072 4.286 8.072c1.165 -.05 1.799 -.538 3.214 -.538c1.406 0 1.607 .538 3.214 .538s4.286 -3.229 4.286 -5.381c-.03 -.011 -2.649 -.434 -2.679 -3.23c-.02 -2.335 2.589 -3.179 2.679 -3.228c-1.096 -1.606 -3.162 -2.113 -3.75 -2.153c-1.535 -.12 -3.032 1.077 -3.75 1.077c-.729 0 -2.036 -1.077 -3.214 -1.077z" /><path d="M12 4a2 2 0 0 0 2 -2a2 2 0 0 0 -2 2" /></svg>
-            </p>
-        <h3>Aplicaciones web</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dicta quam optio, perspiciatis quae laborum?</p>
+        <section class="servicio">
+          <p>
+            <div class="iconos">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="44"
+              height="44"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-brand-shopee"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M4 7l.867 12.143a2 2 0 0 0 2 1.857h10.276a2 2 0 0 0 2 -1.857l.867 -12.143h-16z"
+              />
+              <path d="M8.5 7c0 -1.653 1.5 -4 3.5 -4s3.5 2.347 3.5 4" />
+              <path
+                d="M9.5 17c.413 .462 1 1 2.5 1s2.5 -.897 2.5 -2s-1 -1.5 -2.5 -2s-2 -1.47 -2 -2c0 -1.104 1 -2 2 -2s1.5 0 2.5 1"
+              />
+            </svg>
+        </div>
+        </p>
+        <h3>E-commerce</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dicta
+            quam optio, perspiciatis quae laborum?
+          </p>
         </section>
-        <section>
-            <p>
-                <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-shopee"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 7l.867 12.143a2 2 0 0 0 2 1.857h10.276a2 2 0 0 0 2 -1.857l.867 -12.143h-16z" /><path d="M8.5 7c0 -1.653 1.5 -4 3.5 -4s3.5 2.347 3.5 4" /><path d="M9.5 17c.413 .462 1 1 2.5 1s2.5 -.897 2.5 -2s-1 -1.5 -2.5 -2s-2 -1.47 -2 -2c0 -1.104 1 -2 2 -2s1.5 0 2.5 1" /></svg>
-            </p>
-            <h3>E-commerce</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dicta quam optio, perspiciatis quae laborum?</p>
-        </section>
+      </div>
     </main>
 
-    <footer>
-        <h2>Contactos</h2>
-        <form>
-            <fieldset>
-                <legend>Completa los campos</legend>
+    <footer >
+      <h2>Contactos</h2>
+      
+      <form class="formulario">
+        <fieldset>
+            <legend>Completa los campos</legend>
                 
-                <div>
-                        <label>Nombre</label>
-                        <input type="text" placeholder="Ingrese tu Nombre"/>
+            <div class="campos">
+                <div class="campo">
+                    <label>Nombre</label>
+                    <input type="text" placeholder="Ingrese tu Nombre" />
                 </div>
 
-                <div>
+                <div class="campo">
                     <label>Email</label>
-                    <input type="email" placeholder="Ingrese tu email"/>
-                </div>
-    
-                <div>
-                    <label>Telefono</label>
-                    <input type="tel" placeholder="Ingrese tu Telefono"/>
+                    <input type="email" placeholder="Ingrese tu email" />
                 </div>
 
-                <div>
+                <div class="campo">
+                    <label>Telefono</label>
+                    <input type="tel" placeholder="Ingrese tu Telefono" />
+                </div>
+
+                <div class="campo">
                     <label>Mensaje</label>
                     <textarea></textarea>
                 </div>
-
-                <input type="submit" value="Enviar">
-
-            </fieldset>
-        </form>
+            </div>
+            <div class="enviar">
+          <input class="boton" type="submit" value="Enviar" />
+        </div>
+        </fieldset>
+      </form>
     </footer>
 
-</body>
+    <h2>Sebastian Vera</h2>
+  </body>
 </html>
