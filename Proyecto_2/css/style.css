@@ -1,0 +1,140 @@
+:root{
+    --bg-color: #6523e3;
+    --primary-color: hsl(0, 0%, 86%);
+    --secondary-color:  #5227a3;;
+    --amarillo: #ffca3a;
+    --gradient-azul-claro: #518de66b; ;
+    --negro: #000000;
+
+    --fuente_principal: 'Oswald', sans-serif;
+    --fuente_secundaria: 'Roboto', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+/* Globales */
+body{
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+    font-size: 1.6rem;
+    font-family: var(--fuente_principal);
+    line-height: 1.5;
+}
+
+h1, h2, h3{
+    text-align: center;
+    color: var(--fuente_secundaria) ;
+    font-family: var(--fuente_secundaria);
+}
+
+h1{
+    font-size: 4rem;
+}
+
+h2{
+    font-size: 3.2rem;
+}
+
+h3{
+    font-size: 2.4rem;
+}
+
+
+img{
+    max-width: 100%;
+}
+
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+
+/**Header**/
+
+.header{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.header__logo{
+    margin: 3rem 0;
+    padding: 3rem;
+}
+
+
+/**Navegacion**/
+
+.navegacion{
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+
+
+
+.navegacion__enlace{
+    width: 100%;
+    color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-size: 2.2rem;
+    
+}
+
+
+.navegacion__enlace--active, 
+.navegacion__enlace:hover{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    border-radius: 0.5rem;
+}
+
+@media (min-width: 768px) {
+    .navegacion{
+        margin: 0 auto;
+        padding: 1rem;
+        border-radius: 0.5rem;
+    }
+    
+}
+
+/**Main**/
+
+
+
+/**Footer**/
+
+.footer{
+    background-color: var(--gradient-azul-claro);
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+    
+}
+
+.footer__icono{
+    width: 3rem;
+    height: 3rem;
+    margin: 0 auto;
+}
