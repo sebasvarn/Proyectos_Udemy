@@ -1,0 +1,32 @@
+{
+  "name": "proyecto_3",
+  "version": "1.0.0",
+  "description": "Aprendiendo SAAS y NPM",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch src/scss:dist/css ",
+    "dev": "gulp dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/sebasvarn/Proyectos_Udemy.git"
+  },
+  "keywords": [
+    "SASS",
+    "NPM",
+    "Gulp"
+  ],
+  "author": "Sebastian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sebasvarn/Proyectos_Udemy/issues"
+  },
+  "homepage": "https://github.com/sebasvarn/Proyectos_Udemy#readme",
+  "devDependencies": {
+    "gulp": "^5.0.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.77.8"
+  }
+}

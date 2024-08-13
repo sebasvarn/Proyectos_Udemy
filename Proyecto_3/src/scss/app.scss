@@ -1,0 +1,18 @@
+$fuente_principal: "Montserrat", sans-serif;
+
+body{
+    font-family: $fuente_principal;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+    background-color: beige;
+}
+
+.Titulo{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.Titulo p{
+    font-size: 20px;
+}

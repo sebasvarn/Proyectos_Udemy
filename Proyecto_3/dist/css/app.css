@@ -1,0 +1,16 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 400;
+  background-color: beige;
+}
+
+.Titulo {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.Titulo p {
+  font-size: 20px;
+}
