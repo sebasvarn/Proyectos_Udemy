@@ -1,18 +1,5 @@
-$fuente_principal: "Montserrat", sans-serif;
+@forward 'base'; // se usa @forward para importar archivos scss
+@forward 'layout';
+@import '~normalize.css/normalize.css'; // se usa @import para importar archivos css
 
-body{
-    font-family: $fuente_principal;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-weight: 400;
-    background-color: beige;
-}
 
-.Titulo{
-    margin: 0 auto;
-    text-align: center;
-}
-
-.Titulo p{
-    font-size: 20px;
-}
