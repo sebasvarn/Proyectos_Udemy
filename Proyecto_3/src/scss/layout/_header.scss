@@ -1,17 +1,33 @@
 @use 'base/variables' as *;
-
+@use 'base/mixins' as m;
 .header {
     background-color: $granate;
     border-bottom: 0.5rem solid $marron;
-    .contenido-header{
+    @include m.mediaquery($telefono){
+        .contenido-header{
+            flex-direction: column;
+            h1{
+                text-align: center;
+            }
+            .navegacion-header{
+                margin-top: 2rem;
+                flex-direction: column;
+                a{
+                    margin : 1rem 0;
 
+                }
+            }
+        }
+    }
+
+    .contenido-header{
         display: flex;
-        flex-direction: row;
         justify-content: space-between;
         align-items: center;
         padding: 1rem 0;
 
         h1{
+            margin: auto 0;
             color: white;
         }
         .navegacion-header{
@@ -22,6 +38,14 @@
                 color: white;
                 margin-left: 2rem;
             }
+
+            a:hover{
+                color: $marron;
+            }
         }
     }
 }
+
+
+
+

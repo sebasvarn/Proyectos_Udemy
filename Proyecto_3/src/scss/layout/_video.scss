@@ -1,0 +1,43 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.video{
+
+    position:relative;
+    
+    overflow: hidden;
+    .overlay{
+        position: absolute;
+        background-color: rgba(0,0,0,0.8);
+        inset: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .contenido-video{
+            h3{
+                color: v.$granate;
+                font-size: 6rem;
+                margin: 0;
+            }
+            p{
+                display: inline-block;
+                font-size: 2rem;
+                margin: 2rem 0;
+                padding: 1rem 2rem;
+                background-color: v.$granate;
+                border-radius: 1rem;
+                color: white;
+            }
+        }
+    }
+
+    video {
+        display: block;
+        width: 100%;
+        @include m.mediaquery(v.$telefono){
+            width: auto;
+        }
+    }
+
+
+}

@@ -1,5 +1,6 @@
 @import '~normalize.css/normalize.css';
 /* Color Theme Swatches in Hex */
+/* Media Queries */
 html {
   font-size: 62.5%;
   box-sizing: border-box;
@@ -37,7 +38,6 @@ a {
 }
 
 h1, h2, h3 {
-  margin: 0 0 5rem 0;
   font-weight: 900;
 }
 
@@ -51,7 +51,6 @@ h2 {
 
 h3 {
   font-size: 6rem;
-  text-align: center;
 }
 
 img {
@@ -69,14 +68,29 @@ body > section {
   background-color: #8C2C16;
   border-bottom: 0.5rem solid #736E66;
 }
+@media (max-width: 480px) {
+  .header .contenido-header {
+    flex-direction: column;
+  }
+  .header .contenido-header h1 {
+    text-align: center;
+  }
+  .header .contenido-header .navegacion-header {
+    margin-top: 2rem;
+    flex-direction: column;
+  }
+  .header .contenido-header .navegacion-header a {
+    margin: 1rem 0;
+  }
+}
 .header .contenido-header {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 0;
 }
 .header .contenido-header h1 {
+  margin: auto 0;
   color: white;
 }
 .header .contenido-header .navegacion-header {
@@ -87,4 +101,61 @@ body > section {
 .header .contenido-header .navegacion-header a {
   color: white;
   margin-left: 2rem;
+}
+.header .contenido-header .navegacion-header a:hover {
+  color: #736E66;
+}
+
+.video {
+  position: relative;
+  overflow: hidden;
+}
+.video .overlay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.video .overlay .contenido-video h3 {
+  color: #8C2C16;
+  font-size: 6rem;
+  margin: 0;
+}
+.video .overlay .contenido-video p {
+  display: inline-block;
+  font-size: 2rem;
+  margin: 2rem 0;
+  padding: 1rem 2rem;
+  background-color: #8C2C16;
+  border-radius: 1rem;
+  color: white;
+}
+.video video {
+  display: block;
+  width: 100%;
+}
+@media (max-width: 480px) {
+  .video video {
+    width: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .festival {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+  }
+}
+.festival .imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.festival .contenido-festival .fecha {
+  color: #8C2C16;
+  font-size: 2rem;
+  font-weight: bold;
 }
