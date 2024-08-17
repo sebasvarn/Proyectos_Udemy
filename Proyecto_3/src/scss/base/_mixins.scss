@@ -1,7 +1,28 @@
-@use 'variables' as *;
+@use 'variables' as v;
+
 
 @mixin mediaquery($size) {
     @media (max-width: $size) {
         @content;
     }
+}
+
+@mixin flex($direction, $justify: center, $align: center) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin grid($columns, $gap: 4rem) {
+    display: grid;
+    grid-template-columns: repeat($columns, 1fr);
+    gap: $gap;
+
+}
+
+@mixin resetear-lista {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }

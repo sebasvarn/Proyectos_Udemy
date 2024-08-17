@@ -2,16 +2,16 @@
 @use 'base/mixins' as m;
 
 .festival{
+    width: 85%;
+    margin:0 auto;
     @media (min-width: 768px){
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 4rem;
+        @include m.grid(2);
     }
     .imagen{
         img{
+            object-fit: cover;
             width: 100%;
             height: 100%;
-            object-fit: cover;
         }
     }
     .contenido-festival{

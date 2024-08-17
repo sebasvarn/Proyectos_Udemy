@@ -1,0 +1,102 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.contenedor-boletos{
+    background-color: #a1666d;
+    h3{
+        color: white;
+        text-align: center;
+        
+    }
+    .boletos{
+        width: 85%;
+        margin: 0 auto;
+        @media (min-width: 768px){
+            @include m.grid(2);
+        }
+        
+        .pase{
+
+            transition: transform .3s ease-in-out;
+            &:hover {
+                transform: scale(1.1);
+            }
+            
+            &-nombre{
+                font-size: 3.6rem;
+                font-weight: bold;
+                color: white;
+                text-transform: uppercase;
+                text-align: center;
+            }
+
+            &-header, &-footer {
+                padding: .5rem;
+                p{
+                    text-align: center;
+                    color: white;
+                    margin: auto 0;
+                }
+            }
+
+            &-header{
+                background-color: white;
+                border-top-left-radius: 1rem;
+                border-top-right-radius: 1rem;
+                p{
+                    color: black;
+                    font-size: 2rem;
+                    font-weight: bold;
+                    padding-top: 2rem;
+                    text-transform: uppercase;
+            
+                }
+            }
+
+            &-footer{
+                background-color: white;
+                p{
+                    background-color: v.$granate;
+                    border-radius: 2rem;
+                    font-size: 2.8rem;
+                    font-weight: bold;
+                    padding: 1rem 0;
+                    text-transform: uppercase;
+                    &:hover{
+                        background-color: v.$marron;
+                    }
+                }
+            }
+            &-body{
+                background-color: white;
+                padding: 2rem;
+                ul{
+                    @include m.resetear-lista;
+                    li{
+                        font-size: 2rem;
+                        margin-bottom: 1rem;
+                        padding: 2rem;
+                        border-bottom: 1px solid v.$marron;
+                        span{
+                            font-weight: bold;
+                        }
+                    }
+                }
+
+            }
+
+                
+
+
+
+                
+
+                
+
+        }
+
+
+    }
+
+
+}

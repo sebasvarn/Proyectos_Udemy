@@ -1,0 +1,62 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.lineup{
+    
+    background-color: v.$marron_oscuro;
+    color: aliceblue;
+    padding: 5rem 0;
+    @include m.flex(column);
+    p{
+        font-size: 2rem;
+        color: v.$beige_oscuro;
+    }
+    
+    .dia{
+        font-size: 3rem;
+        font-weight: bold;
+        color: white;
+        background-color: v.$granate;
+        padding: 1rem;
+        text-transform: uppercase;
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .calendario{
+        background-color: lighten($color: v.$marron_oscuro, $amount: 10%);
+        @include m.resetear-lista;
+        border-radius: 1rem;
+        li{
+            padding: 2.5rem;
+            font-weight: 700;
+            span{
+                font-weight: 900;
+            }
+        }
+
+        li:nth-child(odd){
+            background-color: lighten(v.$marron_oscuro, 8%);
+            border-radius: 1rem;
+        }
+    }
+        
+
+    .escenario{
+
+        padding-top: 2rem;
+        .nombre-escenario{
+            font-size: 3rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            text-align: center;
+        }
+    }
+    .escenarios-contenedor{
+        @include m.grid(2);
+        @include m.mediaquery(v.$telefono){
+            @include m.grid(1);
+        }
+    }
+}
