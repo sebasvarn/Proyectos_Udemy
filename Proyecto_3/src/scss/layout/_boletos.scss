@@ -12,7 +12,7 @@
         width: 85%;
         margin: 0 auto;
         @media (min-width: 768px){
-            @include m.grid(2);
+            @include m.grid(2, 6rem);
         }
         
         .pase{

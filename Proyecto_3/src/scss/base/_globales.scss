@@ -17,6 +17,10 @@ body {
     color: v.$negro;
     font-size: 2rem;
     background-color: v.$color_fondo;
+
+    &.no-scroll {
+        overflow: hidden;
+    }
 }
 p {
     color: v.$negro;

@@ -1,0 +1,10 @@
+@use 'base/mixins' as m;
+
+.footer{
+    @include m.flex(column);
+}
+.footer__icono{
+    width: 5rem;
+    height: 5rem;
+    padding-top: 2rem;
+}

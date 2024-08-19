@@ -21,6 +21,9 @@ body {
   font-size: 2rem;
   background-color: #F2E1C2;
 }
+body.no-scroll {
+  overflow: hidden;
+}
 
 p {
   color: #333;
@@ -227,6 +230,70 @@ body > section {
   }
 }
 
+.galeria {
+  margin: 0 auto;
+  width: 80%;
+}
+.galeria h3 {
+  text-align: center;
+}
+.galeria-imagenes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+@media (max-width: 768px) {
+  .galeria-imagenes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+}
+@media (max-width: 480px) {
+  .galeria-imagenes {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
+}
+.galeria img {
+  height: 20rem;
+  object-fit: cover;
+}
+
+.modal {
+  position: fixed;
+  z-index: 1;
+  inset: 0;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: grid;
+  place-items: center;
+  animation: fadeIn ease-in 0.5s;
+}
+.modal.fade-out {
+  animation: fadeOut ease-in 0.5s;
+}
+.modal img {
+  max-width: 80rem;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
 .contenedor-boletos {
   background-color: #a1666d;
 }
@@ -242,7 +309,7 @@ body > section {
   .contenedor-boletos .boletos {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 4rem;
+    gap: 6rem;
   }
 }
 .contenedor-boletos .boletos .pase {
@@ -309,4 +376,17 @@ body > section {
 }
 .contenedor-boletos .boletos .pase-body ul li span {
   font-weight: bold;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__icono {
+  width: 5rem;
+  height: 5rem;
+  padding-top: 2rem;
 }
