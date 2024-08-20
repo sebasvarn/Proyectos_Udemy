@@ -1,7 +1,46 @@
 document.addEventListener('DOMContentLoaded', function() {
     navegacionFija();
     crearGaleria();
+    highlightEnlace();
+    scrollNav();
 });
+
+
+function scrollNav() {
+    const enlaces = document.querySelectorAll('.navegacion-header a');
+    enlaces.forEach((enlace) => {
+        enlace.addEventListener('click', (e) => {
+            e.preventDefault();
+            const seccion = document.querySelector(e.target.attributes.href.value);
+            seccion.scrollIntoView({ behavior: 'smooth' });
+            
+        })
+    })
+}
+
+function highlightEnlace() {
+    document.addEventListener('scroll', function() {
+        const secciones = document.querySelectorAll('section');
+        const enlaces = document.querySelectorAll('.navegacion-header a');
+
+        let actual = '';
+        secciones.forEach((seccion, i) => {
+            const seccionTop = seccion.offsetTop;
+            const seccionHeight = seccion.clientHeight;
+
+            if(window.scrollY >= seccionTop - seccionHeight / 3) {
+                actual = seccion.getAttribute('id');
+            }
+        });
+        enlaces.forEach((enlace) => {
+            enlace.classList.remove('activo');
+            if (enlace.getAttribute('href') === `#${actual}`) {
+                enlace.classList.add('activo');
+            }
+1        });
+    }
+    )
+}
 
 function navegacionFija() {
    const header= document.querySelector('.header');

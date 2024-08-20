@@ -114,8 +114,9 @@ body > section {
   color: white;
   margin-left: 2rem;
 }
-.header .contenido-header .navegacion-header a:hover {
-  color: #736E66;
+.header .contenido-header .navegacion-header a:hover, .header .contenido-header .navegacion-header a.activo {
+  color: yellow;
+  font-weight: bold;
 }
 
 .video {

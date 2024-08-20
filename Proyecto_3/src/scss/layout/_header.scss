@@ -50,11 +50,13 @@
             a{
                 color: white;
                 margin-left: 2rem;
+                
+                &:hover, &.activo{
+                    color: yellow;
+                    font-weight: bold;
+                }
             }
 
-            a:hover{
-                color: $marron;
-            }
         }
     }
 }
