@@ -71,6 +71,15 @@ body > section {
   background-color: #8C2C16;
   border-bottom: 0.5rem solid #736E66;
 }
+@media (min-width: 480px) {
+  .header.fijo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+  }
+}
 @media (max-width: 480px) {
   .header .contenido-header {
     flex-direction: column;
@@ -276,6 +285,16 @@ body > section {
 }
 .modal img {
   max-width: 80rem;
+}
+
+.btn-cerrar {
+  background-color: rgba(140, 44, 22, 0.5);
+  border: none;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1rem;
+  border-radius: 1rem;
 }
 
 @keyframes fadeIn {

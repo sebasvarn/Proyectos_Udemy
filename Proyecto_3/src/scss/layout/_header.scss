@@ -1,8 +1,21 @@
 @use 'base/variables' as *;
 @use 'base/mixins' as m;
 .header {
+
+
     background-color: $granate;
     border-bottom: 0.5rem solid $marron;
+    
+    @media (min-width: $telefono){
+        
+        &.fijo{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 100;
+        }
+    }
     @include m.mediaquery($telefono){
         .contenido-header{
             flex-direction: column;

@@ -53,6 +53,17 @@
     
 }
 
+.btn-cerrar {
+    background-color: rgba(v.$granate,0.5);
+    border: none;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+
 @keyframes fadeIn {
     from {
         opacity: 0;
